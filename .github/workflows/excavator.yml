@@ -1,0 +1,22 @@
+# Auto-bump manifests when upstream ships a new release (PULL model — this
+# bucket reads trove's public GitHub Releases; nothing is pushed into here).
+name: Excavator
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
