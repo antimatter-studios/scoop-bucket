@@ -1,12 +1,12 @@
 {
-    "version": "0.20.0",
+    "version": "0.21.0",
     "description": "KeePassXC-compatible secrets CLI (trove) + daemon (troved)",
     "homepage": "https://github.com/antimatter-studios/trove",
     "license": "MIT OR Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/antimatter-studios/trove/releases/download/v0.20.0/trove-0.20.0-windows-x86_64.zip",
-            "hash": "bc3f8de6cc5fc8c2ff0daf5a1e1dfc7be3001d0c84bbfc94446ec6224404858e"
+            "url": "https://github.com/antimatter-studios/trove/releases/download/v0.21.0/trove-0.21.0-windows-x86_64.zip",
+            "hash": "8b0dcdabe405cfd7db463796c915099a5dcc62c91655c84e2439e32bcd3df332"
         }
     },
     "bin": [
